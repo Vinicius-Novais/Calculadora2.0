@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Básica</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="imagex/png" href="img/calculator-icon_34473.ico">
+</head>
+<body>
+  <div class="container">
+    <!-- Título Principal -->
+    <h1>Bem-vindo à Calculadora Básica</h1>
+    
+    <!-- Descrição Inicial -->
+    <p class="intro">Essa é a calculadora mais simples e prática que você já usou. Escolha uma operação e veja os resultados em instantes!</p>
+
+    <!-- Menu Principal -->
+    <div id="menu" class="menu visible">
+      <p>Escolha uma das operações abaixo:</p>
+      <button onclick="escolherOperacao(1)">➕ Soma</button>
+      <button onclick="escolherOperacao(2)">➖ Subtração</button>
+      <button onclick="escolherOperacao(3)">✖️ Multiplicação</button>
+      <button onclick="escolherOperacao(4)">➗ Divisão</button>
+      <button onclick="sair()">🚪 Sair</button>
+    </div>
+
+    <!-- Calculadora -->
+    <div id="calculadora" class="calculadora hidden">
+      <p id="operacao-titulo"></p>
+      <input type="number" id="num1" placeholder="Digite o primeiro número">
+      <input type="number" id="num2" placeholder="Digite o segundo número">
+      <button onclick="calcular()">Calcular</button>
+      <button onclick="voltar()">Voltar</button>
+      <p id="resultado"></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Desenvolvido por <a href="about.html">Vinícius</a></p>
+  </footer>
+
+  <script src="Algoritmo.js"></script>
+</body>
+</html>
